@@ -15,8 +15,13 @@
 
 
 </head>
+ <style>
+.navbar-custom {
+    background-color: #c1f8cf;
+}
+</style>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-warning">
+<nav class="navbar navbar-expand-md navbar-light navbar-custom">
 <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +35,7 @@
         </ul>
     {% endif %}
     <a class="navbar-brand" href="{% url 'authorize' %}">
-         <img src="{% static 'file_storage_system/logo.png' %}" width="30" height="30" class="d-inline-block align-top">
+         <img src="{% static 'file_storage_system/logo.png' %}" width="50" height="30" class="d-inline-block align-top">
         <span>DocShelf - A Document Storage System</span>
     </a>
     <ul class="navbar-nav ml-auto">
